@@ -5,7 +5,10 @@
 <div class="row w-100 mx-0 mt-5 pt-5">
     <div class="card col-lg-4 mx-auto">
         <div class="auth-form-light text-center py-5 px-4 px-sm-5">
-            <h2 class="text-uppercase font-weight-bold mb-4 px-2">Halaman Login</h2>
+            {{-- <h2 class="text-uppercase font-weight-bold mb-4 px-2">Halaman Login</h2> --}}
+            <div class="brand-logo mb-4">
+                <img src="{{ asset('back/images/logo-text.png') }}" alt="">
+            </div>
             <form method="POST" action="{{ route('login') }}">
                 @csrf
                 <div class="form-group">
